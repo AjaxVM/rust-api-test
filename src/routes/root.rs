@@ -54,3 +54,13 @@ pub fn get_router() -> Router {
     .merge(get_root())
     .merge(post_root())
 }
+
+#[cfg(test)]
+mod tests {
+  #[test]
+  fn it_works() {
+    // use some tests from here: https://lib.rs/crates/axum-test-helper
+    let result = 2 + 2;
+    assert_eq!(result, 4)
+  }
+}
